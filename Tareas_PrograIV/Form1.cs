@@ -31,5 +31,19 @@ namespace Tareas_PrograIV
             Main.instance.Hide();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form6 form = new Form6();
+            form.Show();
+            Main.instance.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 form = new Form7();
+            form.Show();
+            Main.instance.Hide();
+        }
     }
 }

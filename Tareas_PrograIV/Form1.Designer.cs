@@ -76,7 +76,7 @@ namespace Tareas_PrograIV
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(222, 287);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(383, 56);
@@ -88,13 +88,14 @@ namespace Tareas_PrograIV
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(222, 379);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(383, 56);
             this.button4.TabIndex = 4;
-            this.button4.Text = "4.3 Promedio de Estudiantes";
+            this.button4.Text = "4.9 Dispensador de Cambio";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Main
             // 

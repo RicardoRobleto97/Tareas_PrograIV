@@ -31,12 +31,12 @@ namespace Tarea_2
         {
             try
             {
-                double r, h;
+                double r,h;
                 double p = Math.PI;
                 r = Convert.ToDouble(txtRadio.Text);
                 h = Convert.ToDouble(txtAltura.Text);
 
-                CilindroA Cilinder = new CilindroA(r,h, p);
+                CilindroA Cilinder = new CilindroA(r, h,p);
                 txtArea.Text = Cilinder.getArea().ToString();
             }
             catch (Exception ex)

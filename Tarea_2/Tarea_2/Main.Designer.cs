@@ -57,6 +57,7 @@ namespace Tarea_2
             this.button2.TabIndex = 6;
             this.button2.Text = "5.10 En Segundos";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 

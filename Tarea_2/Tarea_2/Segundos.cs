@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Tarea_2
 {
-    public partial class Circulo : Form
+    public partial class Segundos : Form
     {
-        public static Circulo instance;
-        public Circulo()
+        public static Segundos instance;
+        public Segundos()
         {
             InitializeComponent();
             instance = this;
@@ -23,20 +23,23 @@ namespace Tarea_2
         {
             Main form1 = new Main();
             form1.Show();
-            Circulo.instance.Hide();
+            Segundos.instance.Hide();
+
         }
 
-        private void CalcularAreaCircula_Click(object sender, EventArgs e)
+        private void CalcularSegs_Click(object sender, EventArgs e)
         {
             try
             {
-                
-                double r;
-                double p= Math.PI;
-                r = Convert.ToDouble(txtRadio.Text);
+                int h, m, s;
 
-                CirculoA Circle = new CirculoA(r,p);
-                txtArea.Text = Circle.getArea().ToString();
+                h = Convert.ToInt32(txtHoras.Text);
+                m = Convert.ToInt32(txtMin.Text);
+                s = Convert.ToInt32(txtSegundos.Text);
+
+                SegundosT secs = new SegundosT(h, m, s);
+                txtTotal.Text = secs.getTotalSegundos().ToString();
+
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);

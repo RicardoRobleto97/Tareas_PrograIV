@@ -8,9 +8,9 @@ namespace Tarea_2
 {
     class CilindroA : CirculoA
     {
-        private double altura;
 
-       
+
+        public double altura;
 
         public CilindroA()
         {
@@ -22,19 +22,14 @@ namespace Tarea_2
 
         public CilindroA(double radio, double pi, double altura) : base(radio, pi)
         {
-
-        }
-
-        public double Altura { get => altura; set => altura = value; }
-
-        public CilindroA(double altura)
-        {
             this.altura = altura;
         }
+        public double Altura { get => altura; set => altura = value; }
+
 
         public override double getArea()
         {
-            return 2*(Pi*Radio)*(Radio+altura);
+            return 2*(Radio*Pi)*(Radio+Altura);
         }
     }
 }

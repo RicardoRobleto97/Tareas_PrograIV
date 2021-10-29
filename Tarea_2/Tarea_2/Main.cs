@@ -37,5 +37,12 @@ namespace Tarea_2
             form.Show();
             Main.instance.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Segundos form = new Segundos();
+            form.Show();
+            Main.instance.Hide();
+        }
     }
 }

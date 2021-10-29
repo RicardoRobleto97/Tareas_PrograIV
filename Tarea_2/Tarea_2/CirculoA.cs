@@ -18,10 +18,12 @@ namespace Tarea_2
         {
             this.radio = radio;
             this.pi = pi;
+            //this.altura = altura;
         }
 
         public double Pi { get => pi; set => pi = value; }
         public double Radio { get => radio; set => radio = value; }
+       // public double Altura { get => altura; set => altura = value; }
 
         public virtual double getArea() { return (pi * radio * radio); }
 

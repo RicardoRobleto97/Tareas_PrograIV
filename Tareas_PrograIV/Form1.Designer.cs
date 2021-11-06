@@ -110,6 +110,7 @@ namespace Tareas_PrograIV
             this.Controls.Add(this.button43);
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

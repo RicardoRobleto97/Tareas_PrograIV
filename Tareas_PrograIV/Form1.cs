@@ -52,5 +52,10 @@ namespace Tareas_PrograIV
             form.Show();
             Main.instance.Hide();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

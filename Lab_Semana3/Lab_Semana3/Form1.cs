@@ -39,6 +39,22 @@ namespace Lab_Semana3
             lista_empleados.Add(nuevo);
             MessageBox.Show("Empleados en lista: " + lista_empleados.Count.ToString());
 
+            /*
+             lista_empleados.Add( new Empleado 
+            {   identidad = txtID.Text;
+            nombre = txtNombre.Text;
+            sexo = (rdbMasculino.Checked ? "M" : "F");
+            fecha_nacimiento = dtpFechaNacimiento.Value;
+           sueldo_base = Math.Round(Convert.ToDouble(txtSueldo.Text), 2);
+           departament = cbxDept.Text;
+            );
+             
+             
+             }* 
+        
+             * 
+             */
+
         }
         private void Limpiar()
         {
@@ -154,7 +170,7 @@ namespace Lab_Semana3
 
         private void Exportar_Lista()
         {
-
+            //el que enrealidad guarda
             sfdGuardar.Filter = "*.txt|*.txt";
             sfdGuardar.FilterIndex = 1;
             sfdGuardar.RestoreDirectory = true;
